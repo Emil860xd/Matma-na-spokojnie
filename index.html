@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matma na spokojnie — korepetycje</title>
+<style>
+:root{--navy:#183153;--blue:#2563eb;--sky:#dbeafe;--mint:#d1fae5;--ink:#172033;--muted:#5b6475;--paper:#f7f9fc;--white:#fff;--line:#dce3ee;--radius:20px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+a{color:inherit}.wrap{width:min(1100px,92%);margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:20px 0}.brand{font-weight:850;font-size:1.1rem;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:10px}.logo{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:var(--blue);color:white;font-size:1.25rem}.navlinks{display:flex;gap:22px;flex-wrap:wrap}.navlinks a{text-decoration:none;font-size:.94rem;color:var(--muted);font-weight:650}.navlinks a:hover{color:var(--blue)}
+.hero{padding:46px 0 64px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:40px}.eyebrow{display:inline-block;background:var(--mint);color:#065f46;padding:6px 12px;border-radius:999px;font-size:.82rem;font-weight:800}.hero h1{font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.04;letter-spacing:-.045em;color:var(--navy);margin:18px 0}.hero p{font-size:1.1rem;color:var(--muted);max-width:620px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:12px;background:var(--blue);color:#fff;text-decoration:none;font-weight:800;border:2px solid var(--blue)}.btn.secondary{background:transparent;color:var(--navy);border-color:var(--line)}.art{background:linear-gradient(145deg,#dbeafe,#ecfdf5);border-radius:32px;min-height:330px;display:grid;place-items:center;position:relative;overflow:hidden}.mathcard{background:#fff;border:1px solid #e3eaf5;border-radius:22px;padding:28px;box-shadow:0 20px 55px #1831531a;transform:rotate(-4deg);width:min(290px,78%)}.mathcard .sum{font-size:2.5rem;font-weight:900;color:var(--blue);text-align:center;margin:8px}.mathcard p{text-align:center;color:var(--muted);margin:0}.bubble{position:absolute;border-radius:50%;display:grid;place-items:center;font-size:1.5rem;font-weight:900}.b1{width:60px;height:60px;background:#fde68a;top:25px;right:30px}.b2{width:50px;height:50px;background:#c4b5fd;bottom:25px;left:25px}.section{padding:66px 0}.section.white{background:#fff}.section-head{text-align:center;max-width:650px;margin:0 auto 34px}.section h2{font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.15;color:var(--navy);margin:0 0 12px;letter-spacing:-.025em}.section-head p,.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px}.white .card{background:var(--paper)}.icon{font-size:1.8rem}.card h3{margin:10px 0 6px;color:var(--navy)}.card p{margin:0;color:var(--muted)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.num{width:36px;height:36px;border-radius:11px;background:var(--sky);color:var(--blue);display:grid;place-items:center;font-weight:900}.pricebox{max-width:720px;margin:auto;background:var(--navy);color:#fff;padding:30px;border-radius:24px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}.pricebox h3{font-size:1.4rem;margin:0 0 6px}.pricebox p{margin:0;color:#dbeafe}.price{font-size:1.5rem;font-weight:900;white-space:nowrap}.contactgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:26px}.contactinfo{background:var(--sky);padding:28px;border-radius:24px}.contactinfo h3{color:var(--navy);margin-top:0}.contactinfo p{color:#34445e}.form{background:#fff;border:1px solid var(--line);padding:28px;border-radius:24px}.field{margin-bottom:16px}.field label{display:block;font-weight:750;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;padding:12px 13px;border:1px solid #cbd5e1;border-radius:10px;font:inherit;background:#fff;color:#172033}.field textarea{min-height:110px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{outline:3px solid #bfdbfe;border-color:var(--blue)}.form button{cursor:pointer;width:100%;font:inherit}.notice{font-size:.82rem;color:var(--muted);margin:12px 0 0}.formresult{display:none;margin-top:14px;padding:13px;border-radius:10px;background:#d1fae5;color:#065f46;font-weight:700}.footer{padding:26px 0;background:#111f37;color:#dbeafe;font-size:.9rem}.footerrow{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.small{font-size:.84rem;color:var(--muted)}
+@media(max-width:760px){.nav{align-items:flex-start;flex-direction:column}.hero{grid-template-columns:1fr;padding-top:28px;gap:24px}.art{min-height:250px}.grid,.steps,.contactgrid{grid-template-columns:1fr}.pricebox{grid-template-columns:1fr}.price{white-space:normal}.section{padding:48px 0}.navlinks{gap:14px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+<nav class="nav" aria-label="Główna nawigacja">
+<a class="brand" href="#start"><span class="logo">∑</span><span>Matma na spokojnie</span></a>
+<div class="navlinks"><a href="#oferta">Oferta</a><a href="#jak">Jak działamy</a><a href="#cennik">Cennik</a><a href="#kontakt">Kontakt</a></div>
+</nav>
+</header>
+<main>
+<section class="hero wrap" id="start">
+<div><span class="eyebrow">Korepetycje z matematyki • klasy 1–6</span><h1>Matematyka, którą da się zrozumieć.</h1><p>Pomagamy młodszym uczniom spokojnie przejść przez zadania, przygotować się do sprawdzianów i nadrobić szkolne zaległości — krok po kroku, bez presji.</p><div class="actions"><a class="btn" href="#kontakt">Zapytaj o termin ↗</a><a class="btn secondary" href="#oferta">Zobacz ofertę</a></div></div>
+<div class="art" aria-label="Ilustracja matematyczna"><div class="mathcard"><p>Małe kroki, duży postęp</p><div class="sum">7 × 8 = ?</div><p>Rozwiązujemy razem</p></div><div class="bubble b1">+</div><div class="bubble b2">÷</div></div>
+</section>
+<section class="section white" id="oferta"><div class="wrap"><div class="section-head"><h2>W czym pomagamy?</h2><p>Dopasowujemy tempo do ucznia i wyjaśniamy zadania prostym językiem.</p></div><div class="grid">
+<article class="card"><div class="icon">✏️</div><h3>Praca domowa</h3><p>Wspólne rozwiązywanie zadań i zrozumienie, skąd bierze się wynik.</p></article>
+<article class="card"><div class="icon">📘</div><h3>Sprawdziany</h3><p>Powtórzenie materiału, przykładowe zadania i ćwiczenie potrzebnych umiejętności.</p></article>
+<article class="card"><div class="icon">🧩</div><h3>Nadrabianie zaległości</h3><p>Wracamy do podstaw i układamy materiał w logiczną całość.</p></article>
+</div></div></section>
+<section class="section" id="jak"><div class="wrap"><div class="section-head"><h2>Jak to działa?</h2><p>Prosty proces od pierwszej wiadomości do wspólnej nauki.</p></div><div class="steps">
+<article class="card"><div class="num">1</div><h3>Napisz do nas</h3><p>Podaj klasę, temat i czego uczeń potrzebuje.</p></article>
+<article class="card"><div class="num">2</div><h3>Ustalamy szczegóły</h3><p>Potwierdzamy dostępny termin, formę zajęć i cenę.</p></article>
+<article class="card"><div class="num">3</div><h3>Ćwiczymy krok po kroku</h3><p>Pracujemy nad konkretnymi zadaniami i sprawdzamy, co już jest jasne.</p></article>
+</div></div></section>
+<section class="section white" id="cennik"><div class="wrap"><div class="section-head"><h2>Prosty cennik</h2><p>Uzupełnijcie stawki przed opublikowaniem strony.</p></div><div class="pricebox"><div><h3>Indywidualna lekcja matematyki</h3><p>Klasy 1–6 · 45 minut · czwartki–wtorki</p></div><div class="price">[wpisz cenę]</div></div><p class="small" style="text-align:center;margin-top:14px">Zajęcia trwają 45 minut. Możecie też dodać informację, czy odbywają się online czy stacjonarnie.</p></div></section>
+<section class="section" id="kontakt"><div class="wrap"><div class="section-head"><h2>Zapytaj o korepetycje</h2><p>Wypełnij krótki formularz — przygotujemy wiadomość do wysłania.</p></div><div class="contactgrid">
+<aside class="contactinfo"><h3>Kontakt i zapisy</h3><p>Podaj tylko informacje potrzebne do ustalenia zajęć. Nie wpisuj adresu domowego ani innych prywatnych danych.</p><p><strong>Przedmiot:</strong> matematyka<br><strong>Poziom:</strong> klasy 1–6<br><strong>Termin:</strong> do ustalenia</p><p class="small">Pamiętajcie: ten demonstracyjny formularz nie wysyła danych samodzielnie. Po opublikowaniu skonfigurujcie prawdziwy formularz albo przycisk e-mail.</p></aside>
+<form class="form" id="contactForm">
+<div class="field"><label for="parent">Imię rodzica/opiekuna (lub osoby kontaktującej się)</label><input id="parent" name="parent" autocomplete="name" placeholder="Np. Anna" required></div>
+<div class="field"><label for="email">E-mail do odpowiedzi</label><input id="email" name="email" type="email" autocomplete="email" placeholder="np. kontakt@example.com" required></div>
+<div class="field"><label for="grade">Klasa ucznia</label><select id="grade" name="grade" required><option value="">Wybierz klasę</option><option>Klasa 1</option><option>Klasa 2</option><option>Klasa 3</option><option>Klasa 4</option><option>Klasa 5</option><option>Klasa 6</option></select></div>
+<div class="field"><label for="topic">W czym pomóc?</label><textarea id="topic" name="topic" placeholder="Np. ułamki, tabliczka mnożenia, przygotowanie do sprawdzianu" required></textarea></div>
+<button class="btn" type="submit">Przygotuj wiadomość</button><p class="notice">Kliknięcie nie wysyła formularza na serwer — otworzy gotową wiadomość e-mail, jeśli na urządzeniu skonfigurowano pocztę.</p><div class="formresult" id="formResult" role="status"></div>
+</form></div></div></section>
+</main>
+<footer class="footer"><div class="wrap footerrow"><span>© <span id="year"></span> Matma na spokojnie</span><span>Spokojnie tłumaczymy. Ćwiczymy razem.</span></div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('contactForm').addEventListener('submit', function(e){
+ e.preventDefault();
+ const f = new FormData(this);
+ const subject = 'Zapytanie o korepetycje z matematyki';
+ const body = `Dzień dobry,\\n\\nChcę zapytać o korepetycje z matematyki.\\nOsoba kontaktująca się: ${f.get('parent')}\\nE-mail do odpowiedzi: ${f.get('email')}\\nKlasa: ${f.get('grade')}\\nTemat: ${f.get('topic')}\\n\\nProszę o informację o dostępnych terminach i cenie.`;
+ const result = document.getElementById('formResult');
+ result.style.display = 'block';
+ result.textContent = 'Przygotowuję wiadomość e-mail. Jeśli aplikacja pocztowa się nie otworzy, skopiuj treść formularza i skontaktuj się z nami innym uzgodnionym sposobem.';
+ window.location.href = 'mailto:?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
